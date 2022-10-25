@@ -1,4 +1,4 @@
-// import saveAs from 'file-saver/src/FileSaver';
+// import saveAs from 'file-saver';
 
 
 let rawTextEl = document.getElementById("rawText");
@@ -15,7 +15,7 @@ function processRawTextAndPasteInDisplay() {
 
   let textofuser = rawTextEl.value;
   textofuser = textofuser.replace(/[^a-zA-Z ]/g, " ");
-  // console.log(textofuser);
+  console.log(textofuser);
   textofuser = textofuser.split(" ");
   // console.log(textofuser);
   textofuser = textofuser.map(element => {
